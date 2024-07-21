@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "GolosText";
+  src: url(./GolosText_Regular.woff) format("woff"),
+  url(./GolosText_Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(MerriweatherRegular.woff) format("woff"),
+  url(./MerriweatherRegular.woff) format("woff");
+}
+
+h1{
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #313131;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: "GolosText";
+  color: #313131;
+}
+
+button{
+  font-family: "GolosText";
+}
+/* @font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url(./Inter-Black.woff) format("woff"),
+  url(./Inter-Black.woff2) format("woff2");
+} */

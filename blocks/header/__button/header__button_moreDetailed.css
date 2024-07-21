@@ -1,0 +1,12 @@
+.header__button_moreDetailed{
+  top: 470px;
+  border: 0;
+  background-color: #FFFFFF;
+  opacity: 90%;
+  line-height: 130%;
+}
+
+.header__button_moreDetailed:hover{
+  background-color:#1F1F1F;
+  color: #FFFFFF;
+}

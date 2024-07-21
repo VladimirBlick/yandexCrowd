@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width:1920px) {
+  .header {
+opacity: 50%;
+  }
+}
