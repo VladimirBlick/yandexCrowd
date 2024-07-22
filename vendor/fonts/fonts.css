@@ -17,6 +17,21 @@ h1{
   text-transform: uppercase;
 }
 
+h2{
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #313131;
+  text-transform: uppercase;
+}
+
+h3{
+  font-family: "Merriweather";
+  font-weight: 400;
+  color: #313131;
+  text-transform: uppercase;
+
+}
+
 p{
   font-family: "GolosText";
   color: #313131;

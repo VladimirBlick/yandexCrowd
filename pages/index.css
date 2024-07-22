@@ -17,6 +17,17 @@
 @import url(../blocks/runningLine/runningLine.css);
 @import url(../blocks/runningLine/__content/runningLine__content.css);
 @import url(../blocks/runningLine/__point/runningLine__point.css);
+@import url(../blocks/tournamentInfo/tournamentInfo.css);
+@import url(../blocks/tournamentInfo/__container/tournamentInfo__container.css);
+@import url(../blocks/tournamentInfo/__img/tournamentInfo__img.css);
+@import url(../blocks/tournamentInfo/__title/tournamentInfo__title.css);
+@import url(../blocks/tournamentInfo/__title/tournamentInfo__title_red.css);
+@import url(../blocks/tournamentInfo/__collage/tournamentInfo__collage.css);
+@import url(../blocks/tournamentInfo/__grid/tournamentInfo__grid.css);
+@import url(../blocks/tournamentInfo/__title-bender/tournamentInfo__title-bender.css);
+@import url(../blocks/tournamentInfo/__table-left/tournamentInfo__table-left.css);
+@import url(../blocks/tournamentInfo/__table-rigth/tournamentInfo__table-rigth.css);
+@import url(../blocks/tournamentInfo/__table-bottom-line/tournamentInfo__table-bottom-line.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 

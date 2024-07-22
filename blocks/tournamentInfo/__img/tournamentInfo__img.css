@@ -1,0 +1,7 @@
+@media screen and (min-width: 767px) {
+  .tournamentInfo__img{
+    width: 394px;
+    height: 250px;
+    margin: 0 0 0 64px;
+  }
+}

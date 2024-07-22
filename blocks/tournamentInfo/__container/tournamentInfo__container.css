@@ -1,0 +1,10 @@
+.tournamentInfo__container{
+
+}
+
+@media screen and (min-width: 767px) {
+.tournamentInfo__container{
+display: flex;
+flex-direction: row;
+}
+}
