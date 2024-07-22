@@ -9,3 +9,8 @@
   line-height: 130%;
 }
 
+@media screen and (min-width: 767px) {
+  .header__subtitle {
+   text-align: center;
+  }
+}

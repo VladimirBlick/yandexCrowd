@@ -1,0 +1,12 @@
+.runningLine {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 38px;
+  background-color: #F54932;
+}
+@media (width >= 768px) {
+  .runningLine {
+    height: 60px;
+  }
+}
