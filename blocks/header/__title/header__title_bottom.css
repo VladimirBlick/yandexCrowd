@@ -1,4 +1,6 @@
 .header__title_bottom {
-  text-align: center;
-  padding-left: 27px;
+  text-align: right;
+  margin: 0 0 0 27px;
+  line-height: 110%;
+
 }

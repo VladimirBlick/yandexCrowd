@@ -1,14 +1,15 @@
 .header__logo {
-  position: relative;
+  /* position: relative; */
+  /* text-align: left; */
   width: 213px;
   height: 32px;
-  margin: 18px 0 0 20px;
+  margin: 18px 0 0;
 }
 
-/* @media screen and (min-width:1000px) {
-  .header__logo {
-    width: 142px;
-    height: 33px;
-    margin: 0;
-  }
-} */
+@media screen and (min-width:768px) {
+.header__logo {
+width: 245px;
+height: 36px;
+margin: 26px 0 0 72px;
+}
+}

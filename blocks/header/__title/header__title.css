@@ -1,11 +1,14 @@
 .header__title{
-  width: 335px;
-  font-size: 36px;
-/* height: 80px; */
-text-align: left;
+width: 100%;
+font-size: 36px;
 margin: 40px auto 0;
-line-height: 110%;
-padding: 0;
-position: relative;
-/* top: 130px; */
+
+}
+
+@media screen and (min-width: 767px) {
+  .header__title{
+    width: 542px;
+    font-size: 60px;
+    margin: 0;
+  }
 }

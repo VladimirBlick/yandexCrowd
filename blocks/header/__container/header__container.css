@@ -1,0 +1,16 @@
+.header__container{
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  margin: 0 auto;
+  }
+
+
+@media screen and (min-width:768px) {
+  .header__container{
+  display: flex;
+  flex-direction: column;
+  width: 1366px;
+  margin: 0 auto;
+  }
+}
