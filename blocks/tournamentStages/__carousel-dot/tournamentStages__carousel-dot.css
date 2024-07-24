@@ -1,0 +1,12 @@
+.tournamentStages__carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--disabled-color);
+}
+.tournamentStages__carousel-dot[data-current] {
+  background: var(--color-dark);
+}
+.tournamentStages__carousel-dot:hover {
+  cursor: pointer;
+}

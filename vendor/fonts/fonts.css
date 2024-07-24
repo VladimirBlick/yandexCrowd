@@ -40,10 +40,10 @@ p{
 button{
   font-family: "GolosText";
 }
-/* @font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url(./Inter-Black.woff) format("woff"),
-  url(./Inter-Black.woff2) format("woff2");
-} */
+
+li{
+  font-family: "GolosText";
+  font-weight: bold;
+  font-size: 20px;
+  color: #313131;
+}

@@ -1,0 +1,11 @@
+.tournamentStages__title {
+  font-size: 54px;
+  line-height: 1.2;
+  margin: 0;
+}
+@media (width <= 550px) {
+  .tournamentStages__title {
+    display: flex;
+    flex-flow: column;
+  }
+}

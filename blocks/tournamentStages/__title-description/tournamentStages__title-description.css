@@ -1,0 +1,26 @@
+.tournamentStages__title-description {
+  display: inline-block;
+  color: #3057A2;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0;
+  text-transform: none;
+  max-width: 280px;
+}
+@media (width < 535px) {
+  .tournamentStages__title-description {
+    max-width: 250px;
+  }
+}
+@media (width <= 550px) {
+  .tournamentStages__title-description {
+    margin-top: 12px;
+  }
+}
+@media (width >= 768px) {
+  .tournamentStages__title-description {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+  }
+}

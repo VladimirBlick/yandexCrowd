@@ -1,0 +1,11 @@
+.tournamentStages__carousel-controls {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin: 28px auto;
+}
+@media (width >= 850px) {
+  .tournamentStages__carousel-controls {
+    display: none;
+  }
+}
