@@ -1,1 +1,21 @@
+.tournamentInfo__grid {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: auto auto auto auto auto auto 20px;
+  grid-template-areas:
+    "title title"
+    "info1 info2"
+    "info3 info4"
+    "info5 info6"
+    "info7 info8"
+    "info9 info10"
+    ". ."
+    "bottom bottom";
+  font-size: 20px;
+  line-height: 24px;
+}
 
+.tournamentInfo__table-bottom {
+  grid-area: bottom;
+}
