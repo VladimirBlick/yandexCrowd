@@ -1,0 +1,8 @@
+.tournamentMembers__controls-counter {
+  width: 42px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 2px;
+  color: var(--dimmed-text-color);
+}

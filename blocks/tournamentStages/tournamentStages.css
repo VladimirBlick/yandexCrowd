@@ -1,8 +1,10 @@
-.stages {
-  margin-bottom: 120px;
+.tournamentStages {
+  /* position: relative; */
+  max-width: 1222px;
+  margin: 0 auto;
 }
-@media (width >= 850px) {
-  .stages {
+/* @media (width >= 850px) {
+  .tournamentStages {
     margin-bottom: 150px;
   }
-}
+} */

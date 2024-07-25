@@ -1,0 +1,10 @@
+.tournamentMembers__title-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 210px 0 0 0; */
+}
+@media (width <= 968px) {
+  .tournamentMembers__title-container {
+    display: contents;
+  }
+}

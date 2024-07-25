@@ -43,6 +43,10 @@ h1 {
   margin: 0.67em 0;
 }
 
+h3{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 /* Grouping content
    ========================================================================== */
 
@@ -345,7 +349,10 @@ template {
   display: none;
 }
 
-ul { padding-inline-start: 0; }
+ul { padding-inline-start: 0;
+margin-block-start: 0;
+margin-block-end: 0;
+}
 
 /**
  * Add the correct display in IE 10.

@@ -31,8 +31,9 @@
 @import url(../blocks/tournamentInfo/__table/tournamentInfo__table_red.css);
 @import url(../blocks/tournamentInfo/__table-bottom/tournamentInfo__table-bottom.css);
 
-@import url(../blocks/tournamentStages/tournament__stages.css);
+@import url(../blocks/tournamentStages/tournamentStages.css);
 @import url(../blocks/tournamentStages/__carousel-btn/tournamentStages__carousel-btn.css);
+@import url(../blocks/tournamentStages/__carousel-btn/tournamentStages_carousel-btn_next.css);
 @import url(../blocks/tournamentStages/__carousel-controls/tournamentStages__carousel-controls.css);
 @import url(../blocks/tournamentStages/__carousel-current/tournamentStages__carousel-current.css);
 @import url(../blocks/tournamentStages/__carousel-dot/tournamentStages__carousel-dot.css);
@@ -43,5 +44,23 @@
 @import url(../blocks/tournamentStages/__title-description/tournamentStages__title-description.css);
 @import url(../blocks/tournamentStages/__title/tournamentStages__title.css);
 
+@import url(../blocks/tournamentMembers/tournamentMembers.css);
+@import url(../blocks/tournamentMembers/__btn-more/tournamentMembers__btn-more.css);
+@import url(../blocks/tournamentMembers/__container/tournamentMembers__container.css);
+@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn.css);
+@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn.css);
+
+@import url(../blocks/tournamentMembers/__controls-counter/tournamentMembers__controls-counter.css);
+@import url(../blocks/tournamentMembers/__controls/tournamentMembers__controls.css);
+@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn_next.css);
+@import url(../blocks/tournamentMembers/__list-item/tournamentMembers__list-item.css);
+@import url(../blocks/tournamentMembers/__list/tournamentMembers__list.css);
+@import url(../blocks/tournamentMembers/__name/tournamentMembers__name.css);
+@import url(../blocks/tournamentMembers/__picture/tournamentMembers__picture.css);
+@import url(../blocks/tournamentMembers/__rating/tournamentMembers__rating.css);
+@import url(../blocks/tournamentMembers/__title-container/tournamentMembers__title-container.css);
+@import url(../blocks/tournamentMembers/__title/tournamentMembers__title.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__container/footer__container.css);

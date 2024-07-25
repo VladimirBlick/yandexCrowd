@@ -19,11 +19,11 @@ const delay =
   cfg = {
     animatedAttr: "animated",
     instantAttr: "instant-transform",
-    membersAutoplay: true,
-    membersCount: 6,
-    membersGaps: { default: 20, media: [{ query: "(max-width: 375px)", value: 32 }] },
-    membersInstantCssVar: "--offset",
-    membersVIO: [1, 2, 3],
+    tournamentMembersAutoplay: true,
+    tournamentMembersCount: 6,
+    tournamentMembersGaps: { default: 20, media: [{ query: "(max-width: 375px)", value: 32 }] },
+    tournamentMembersInstantCssVar: "--offset",
+    tournamentMembersVIO: [1, 2, 3],
     stagesCurrAttr: "data-current",
     stagesInstantCssVar: "--translate-x",
     stagesSlides: 5,
@@ -31,14 +31,14 @@ const delay =
   // Элементы
   el = {
     animated: get(`[${cfg.animatedAttr}]`, 0),
-    membersContainer: get(".members__container", 1),
-    membersList: get(".members__list", 1),
-    membersListItems: get(".members__list-item", 0),
-    membersControls: get(".members__controls", 1),
-    membersVIC: get(".members__controls-counter_vic", 1),
-    membersPrevBtn: get(".members__controls-btn_prev", 1),
-    membersNextBtn: get(".members__controls-btn_next", 1),
-    membersTimer: get(".timer", 1),
+    tournamentMembersContainer: get(".tournamentMembers__container", 1),
+    tournamentMembersList: get(".tournamentMembers__list", 1),
+    tournamentMembersListItems: get(".tournamentMembers__list-item", 0),
+    tournamentMembersControls: get(".tournamentMembers__controls", 1),
+    tournamentMembersVIC: get(".tournamentMembers__controls-counter_vic", 1),
+    tournamentMembersPrevBtn: get(".tournamentMembers__controls-btn_prev", 1),
+    tournamentMembersNextBtn: get(".tournamentMembers__controls-btn_next", 1),
+    tournamentMembersTimer: get(".timer", 1),
     stagesContainer: get(".stages__list-container", 1),
     stagesList: get(".stages__list", 1),
     stagesDots: get(".stages__carousel-dot", 0),
@@ -55,34 +55,34 @@ const delay =
       sOffset: window.matchMedia("(max-width: 849px)").matches
         ? stagesState.currentIndex * (el.stagesContainer.clientWidth + 20) * -1
         : 0,
-      mItemW: el.membersListItems[0].offsetWidth,
-      mGap: getGap(cfg.membersGaps),
-      mVICV: getVisibleElements(el.membersContainer.offsetWidth, el.membersListItems[0].offsetWidth, getGap(cfg.membersGaps)),
+      mItemW: el.tournamentMembersListItems[0].offsetWidth,
+      mGap: getGap(cfg.tournamentMembersGaps),
+      mVICV: getVisibleElements(el.tournamentMembersContainer.offsetWidth, el.tournamentMembersListItems[0].offsetWidth, getGap(cfg.tournamentMembersGaps)),
       mTotalSlides:
-        cfg.membersCount /
-        getVisibleElements(el.membersContainer.offsetWidth, el.membersListItems[0].offsetWidth, getGap(cfg.membersGaps)),
-      mInitOffset: getOffset(el.membersListItems[0].offsetWidth, getGap(cfg.membersGaps), cfg.membersVIO),
+        cfg.tournamentMembersCount /
+        getVisibleElements(el.tournamentMembersContainer.offsetWidth, el.tournamentMembersListItems[0].offsetWidth, getGap(cfg.tournamentMembersGaps)),
+      mInitOffset: getOffset(el.tournamentMembersListItems[0].offsetWidth, getGap(cfg.tournamentMembersGaps), cfg.tournamentMembersVIO),
     }
   },
   // Applying  config's
   instantAttr = cfg.instantAttr,
-  membersAutoplay = cfg.membersAutoplay,
-  membersCount = cfg.membersCount,
-  membersVIO = cfg.membersVIO,
-  membersInstant = cfg.membersInstantCssVar,
+  tournamentMembersAutoplay = cfg.tournamentMembersAutoplay,
+  tournamentMembersCount = cfg.tournamentMembersCount,
+  tournamentMembersVIO = cfg.tournamentMembersVIO,
+  tournamentMembersInstant = cfg.tournamentMembersInstantCssVar,
   stagesInstant = cfg.stagesInstantCssVar,
   stagesCurrAttr = cfg.stagesCurrAttr,
   stagesTotalSlides = cfg.stagesSlides,
   // Declaring elements
   animated = el.animated,
-  membersContainer = el.membersContainer,
-  membersControls = el.membersControls,
-  membersItem = el.membersListItems[0],
-  membersList = el.membersList,
-  membersNextBtn = el.membersNextBtn,
-  membersPrevBtn = el.membersPrevBtn,
-  membersVIC = el.membersVIC,
-  membersTimer = el.membersTimer,
+  tournamentMembersContainer = el.tournamentMembersContainer,
+  tournamentMembersControls = el.tournamentMembersControls,
+  tournamentMembersItem = el.tournamentMembersListItems[0],
+  tournamentMembersList = el.tournamentMembersList,
+  tournamentMembersNextBtn = el.tournamentMembersNextBtn,
+  tournamentMembersPrevBtn = el.tournamentMembersPrevBtn,
+  tournamentMembersVIC = el.tournamentMembersVIC,
+  tournamentMembersTimer = el.tournamentMembersTimer,
   stagesContainer = el.stagesContainer,
   stagesDots = el.stagesDots,
   stagesList = el.stagesList,
@@ -94,8 +94,8 @@ const delay =
   disableInstantTransform = el =>
     el.hasAttribute(instantAttr) && el.getAttribute(instantAttr) === "true" && el.setAttribute(instantAttr, "false"),
   delaydDisableInstantTransform = e => delay(disableInstantTransform(e), 300),
-  membersObserver = new IntersectionObserver(el =>
-    el.forEach(i => syncAutoplay(i.isIntersecting && membersAutoplay ? "default" : "pause"))
+  tournamentMembersObserver = new IntersectionObserver(el =>
+    el.forEach(i => syncAutoplay(i.isIntersecting && tournamentMembersAutoplay ? "default" : "pause"))
   ),
   animatedObserver = new IntersectionObserver(el =>
     el.forEach(i => i.target.setAttribute("paused", `${!i.isIntersecting}`))
@@ -109,12 +109,12 @@ const delay =
           moveStages(null, Array.from(stagesDots).indexOf(i.target))
         })
     )
-    membersPrevBtn.onclick = () => moveMembers(1)
-    membersNextBtn.onclick = () => moveMembers(-1)
-    membersControls.onmouseenter = () => syncAutoplay("pause")
-    membersControls.onmouseleave = () => syncAutoplay("default")
-    membersList.ontransitionend = () => handleSwap()
-    membersObserver.observe(membersContainer)
+    tournamentMembersPrevBtn.onclick = () => movetournamentMembers(1)
+    tournamentMembersNextBtn.onclick = () => movetournamentMembers(-1)
+    tournamentMembersControls.onmouseenter = () => syncAutoplay("pause")
+    tournamentMembersControls.onmouseleave = () => syncAutoplay("default")
+    tournamentMembersList.ontransitionend = () => handleSwap()
+    tournamentMembersObserver.observe(tournamentMembersContainer)
     animated.forEach(el => {
       el.onmouseenter = () => el.setAttribute("paused", "true")
       el.onmouseleave = () => el.setAttribute("paused", "false")
@@ -123,8 +123,8 @@ const delay =
     window.onresize = () => handleResize()
   },
   // State
-  membersState = {
-    autoplayEnabled: membersAutoplay,
+  tournamentMembersState = {
+    autoplayEnabled: tournamentMembersAutoplay,
     currentIndex: 0,
     isSwap: false, // flag to swap slides from duplicates to corresponding originals after event "transitionend"
     dir: null, // swap direction
@@ -141,23 +141,23 @@ const delay =
     document.documentElement.removeAttribute("class")
     addEventListeners()
     const info = getInfo(el, cfg),
-      newMembersState = {
+      newtournamentMembersState = {
         itemW: info.mItemW,
         initOffset: info.mInitOffset,
         offset: info.mInitOffset,
         totalSlides: info.mTotalSlides,
-        vic: info.mVICV, // Members Visible Items Count Value
+        vic: info.mVICV, // tournamentMembers Visible Items Count Value
         gap: info.mGap,
       },
       newStagesState = {
         containerW: info.sContainerW,
       }
-    Object.assign(membersState, newMembersState)
+    Object.assign(tournamentMembersState, newtournamentMembersState)
     Object.assign(stagesState, newStagesState)
-    membersVIC.textContent = info.mVICV
-    enableInstantTransform(membersList)
-    membersList.style.setProperty(membersInstant, info.mInitOffset + "px")
-    delaydDisableInstantTransform(membersList)
+    tournamentMembersVIC.textContent = info.mVICV
+    enableInstantTransform(tournamentMembersList)
+    tournamentMembersList.style.setProperty(tournamentMembersInstant, info.mInitOffset + "px")
+    delaydDisableInstantTransform(tournamentMembersList)
   },
   moveStages = (dir, index) => {
     const { currentIndex, containerW } = stagesState,
@@ -171,9 +171,9 @@ const delay =
     stagesState.currentIndex = newIndex
     stagesState.offset = newOffset
   },
-  moveMembers = dir => {
-    disableMembersBtns()
-    const { currentIndex, totalSlides, gap, vic, offset, itemW } = membersState,
+  movetournamentMembers = dir => {
+    disabletournamentMembersBtns()
+    const { currentIndex, totalSlides, gap, vic, offset, itemW } = tournamentMembersState,
       stepW = (itemW + gap) * vic,
       newOffset = dir === -1 ? offset - stepW : offset + stepW,
       newIndex = dir === -1 ? currentIndex + 1 : currentIndex - 1,
@@ -184,66 +184,66 @@ const delay =
         dir: dir,
         isSwap: dir === -1 ? newIndex === totalSlides : currentIndex === 0,
       }
-    Object.assign(membersState, state)
-    membersVIC.textContent =
-      dir === -1 ? (state.isSwap ? vic : visibleItemsCounter) : state.isSwap ? membersCount : visibleItemsCounter
-    membersList.style.setProperty(membersInstant, newOffset + "px")
+    Object.assign(tournamentMembersState, state)
+    tournamentMembersVIC.textContent =
+      dir === -1 ? (state.isSwap ? vic : visibleItemsCounter) : state.isSwap ? tournamentMembersCount : visibleItemsCounter
+    tournamentMembersList.style.setProperty(tournamentMembersInstant, newOffset + "px")
   },
-  // Members carousel
+  // tournamentMembers carousel
   handleSwap = () => {
-    const { dir, vic, initOffset, isSwap, totalSlides, itemW, gap, warp } = membersState
+    const { dir, vic, initOffset, isSwap, totalSlides, itemW, gap, warp } = tournamentMembersState
     isSwap &&
       !warp &&
-      ((membersVIC.textContent = dir === -1 ? vic : membersCount),
-      (membersState.currentIndex = dir === -1 ? 0 : totalSlides - 1),
-      (membersState.offset = dir === -1 ? initOffset : initOffset + (itemW + gap) * vic * (totalSlides - 1) * -1),
+      ((tournamentMembersVIC.textContent = dir === -1 ? vic : tournamentMembersCount),
+      (tournamentMembersState.currentIndex = dir === -1 ? 0 : totalSlides - 1),
+      (tournamentMembersState.offset = dir === -1 ? initOffset : initOffset + (itemW + gap) * vic * (totalSlides - 1) * -1),
       warpSwap()),
-      !warp && enableMembersBtns()
+      !warp && enabletournamentMembersBtns()
   },
   warpSwap = () => {
-    membersState.warp = 1
-    enableInstantTransform(membersList)
-    membersList.style.setProperty(membersInstant, membersState.offset + "px")
+    tournamentMembersState.warp = 1
+    enableInstantTransform(tournamentMembersList)
+    tournamentMembersList.style.setProperty(tournamentMembersInstant, tournamentMembersState.offset + "px")
     deactivateWarp()
   },
   deactivateWarp = delay(() => {
-    membersState.isSwap = false
-    membersState.dir = null
-    membersState.warp = 0
-    disableInstantTransform(membersList)
-    enableMembersBtns()
+    tournamentMembersState.isSwap = false
+    tournamentMembersState.dir = null
+    tournamentMembersState.warp = 0
+    disableInstantTransform(tournamentMembersList)
+    enabletournamentMembersBtns()
   }, 10),
-  enableMembersBtns = () => {
-    membersPrevBtn.disabled = false
-    membersNextBtn.disabled = false
+  enabletournamentMembersBtns = () => {
+    tournamentMembersPrevBtn.disabled = false
+    tournamentMembersNextBtn.disabled = false
   },
-  disableMembersBtns = () => {
-    membersPrevBtn.disabled = true
-    membersNextBtn.disabled = true
+  disabletournamentMembersBtns = () => {
+    tournamentMembersPrevBtn.disabled = true
+    tournamentMembersNextBtn.disabled = true
   },
   syncAutoplay = state => {
-    if (membersAutoplay) {
+    if (tournamentMembersAutoplay) {
       timer && clearTimeout(timer)
-      membersState.autoplayEnabled = state === "pause" ? !1 : !0
-      if (membersState.autoplayEnabled) {
+      tournamentMembersState.autoplayEnabled = state === "pause" ? !1 : !0
+      if (tournamentMembersState.autoplayEnabled) {
         startTimer()
         timer = setInterval(() => {
-          membersNextBtn.click()
+          tournamentMembersNextBtn.click()
           startTimer()
         }, 4000)
-        membersControls.classList.add("members__controls--running")
-        membersControls.classList.remove("members__controls--paused")
+        tournamentMembersControls.classList.add("tournamentMembers__controls--running")
+        tournamentMembersControls.classList.remove("tournamentMembers__controls--paused")
       } else {
         stopTimer()
-        membersControls.classList.add("members__controls--paused")
-        membersControls.classList.remove("members__controls--running")
+        tournamentMembersControls.classList.add("tournamentMembers__controls--paused")
+        tournamentMembersControls.classList.remove("tournamentMembers__controls--running")
       }
     }
   },
   handleResize = () => {
     if (size) return
     syncAutoplay("pause")
-    enableInstantTransform(membersList)
+    enableInstantTransform(tournamentMembersList)
     enableInstantTransform(stagesList)
     delaydResizeChanges()
     size = true
@@ -254,7 +254,7 @@ const delay =
         containerW: info.sContainerW,
         offset: info.sOffset,
       },
-      newMembersState = {
+      newtournamentMembersState = {
         itemW: info.mItemW,
         gap: info.mGap,
         vic: info.mVICV,
@@ -264,34 +264,34 @@ const delay =
         offset: info.mInitOffset,
       }
     Object.assign(stagesState, newStagesState)
-    Object.assign(membersState, newMembersState)
+    Object.assign(tournamentMembersState, newtournamentMembersState)
     stagesList.style.setProperty(stagesInstant, info.sOffset + "px")
     disableInstantTransform(stagesList)
-    membersVIC.textContent = info.mVICV
-    membersList.style.setProperty(membersInstant, info.mInitOffset + "px")
-    disableInstantTransform(membersList)
+    tournamentMembersVIC.textContent = info.mVICV
+    tournamentMembersList.style.setProperty(tournamentMembersInstant, info.mInitOffset + "px")
+    disableInstantTransform(tournamentMembersList)
     size = false
     syncAutoplay("default")
   }, 250),
-  // Members progress timer
+  // tournamentMembers progress timer
   now = () => performance.now(),
   update = () => {
     if (!isRunning) return
     const delta = now() - startTime,
       difference = 4e3 - delta,
       percent = Math.max(0, Math.min(100, (difference / 4e3) * 100))
-    membersTimer.style.setProperty("--progress", percent)
+    tournamentMembersTimer.style.setProperty("--progress", percent)
     difference > 0 && requestAnimationFrame(update)
   },
   startTimer = () => {
     startTime = now()
     isRunning = !0
-    membersTimer.style.setProperty("--visibility", "visible")
+    tournamentMembersTimer.style.setProperty("--visibility", "visible")
     requestAnimationFrame(update)
   },
   stopTimer = () => {
     isRunning = !1
-    membersTimer.style.setProperty("--visibility", "hidden")
+    tournamentMembersTimer.style.setProperty("--visibility", "hidden")
     cancelAnimationFrame(update)
   }
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,15 @@
+.tournamentMembers__container {
+  overflow: hidden;
+  
+  /* padding: 40px 0; */
+}
+@media (width <= 968px) {
+  .tournamentMembers__container {
+    order: 2;
+  }
+}
+@media (width >= 768px) {
+  .tournamentMembers__container {
+    padding: 60px 0;
+  }
+}
