@@ -27,7 +27,6 @@
   .tournamentStages__list {
     gap: 20px;
     width: 100%;
-    margin: 50px 0 28px 0;
   }
 }
 @media (850px <= width < 1222px) {
