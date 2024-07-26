@@ -3,9 +3,9 @@
     font-size: 36px;
     line-height: 1.35;
     max-width: 764px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 0 0 40px 20px;
-
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 0 0 45px 0px;
+    
   }
 }
