@@ -1,9 +1,0 @@
-.tournamentMembers__name {
-  font-size: 24px;
-  font-family:"GolosText";
-  font-weight: 600;
-  line-height: 28px;
-  color: var(--color-dark);
-  margin-bottom: 8px;
-  text-transform:capitalize;
-}

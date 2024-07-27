@@ -1,0 +1,7 @@
+.tournametMembers__list {
+  display: flex;
+  column-gap: 20px;
+  position: relative;
+  left: 0px;
+  transition: transform 0.5s;
+}

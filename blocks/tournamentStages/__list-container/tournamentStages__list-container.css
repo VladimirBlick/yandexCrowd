@@ -1,9 +1,9 @@
-.tournamentStages__list-container {
+.tournamentStages__list-tournametMember__container {
   min-height: 300px;
   position: relative;
   padding: 0;
 }
-.tournamentStages__list-container::after {
+.tournamentStages__list-tournametMember__container::after {
   content: "";
   width: 335px;
   height: 182px;
@@ -14,16 +14,16 @@
   background-size: contain;
 }
 @media (width <= 849px) {
-  .tournamentStages__list-container {
+  .tournamentStages__list-tournametMember__container {
     overflow: hidden;
     padding-top: 148px;
   }
 }
 @media (width >= 850px) {
-  .tournamentStages__list-container {
+  .tournamentStages__list-tournametMember__container {
     width: 100%;
   }
-  .tournamentStages__list-container::after {
+  .tournamentStages__list-tournametMember__container::after {
     width: 400px;
     height: 235px;
     bottom: -1px;

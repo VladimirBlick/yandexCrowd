@@ -1,6 +1,4 @@
-@media screen and (min-width: 767px) {
-  .tournamentInfo__title_red{
+.tournamentInfo__title_red{
   color: #F54932;
   font-weight: bold;
   }
-}

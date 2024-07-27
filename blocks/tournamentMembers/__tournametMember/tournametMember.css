@@ -1,0 +1,15 @@
+.tournametMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 394px;
+  flex-shrink: 0;
+  margin: 200px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tournametMember {
+    width: 100%;
+  }
+
+}
