@@ -1,12 +1,12 @@
-.tournamentStages__tournametMembers__carosel -dot {
+.tournamentStages__carosel -dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: var(--disabled-color);
 }
-.tournamentStages__tournametMembers__carosel -dot[data-current] {
+.tournamentStages__carosel -dot[data-current] {
   background: var(--color-dark);
 }
-.tournamentStages__tournametMembers__carosel -dot:hover {
+.tournamentStages__carosel -dot:hover {
   cursor: pointer;
 }

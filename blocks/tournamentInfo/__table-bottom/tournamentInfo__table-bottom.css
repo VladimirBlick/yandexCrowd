@@ -6,3 +6,12 @@
   grid-column-end: 4;
   margin: 0 0 0 5px;
 }
+
+@media screen and (max-width: 767px){
+  .tournamentInfo__table-bottom{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,11 +1,11 @@
-.tournamentStages__tournametMembers__carosel -controls {
+.tournamentStages__carosel -controls {
   display: flex;
   flex-direction: row;
   width: max-content;
   margin: 28px auto;
 }
 @media (width >= 850px) {
-  .tournamentStages__tournametMembers__carosel -controls {
+  .tournamentStages__carosel -controls {
     display: none;
   }
 }

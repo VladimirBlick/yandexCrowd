@@ -1,7 +1,7 @@
 .tournametMembers__slider-controls {
   position: absolute;
   right: 0;
-  top: -114px;
+  top: -115px;
   width: 152px;
 }
 
@@ -76,6 +76,7 @@
   opacity: 1;
 }
 .slider-controls__status {
+  font-family: "GolosText";
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;

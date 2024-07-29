@@ -1,4 +1,4 @@
-.tournamentStages__tournametMembers__carosel -btn {
+.tournamentStages__carosel -btn {
   display: inline-block;
   cursor: pointer;
   width: 36px;
@@ -11,12 +11,9 @@
   -webkit-tap-highlight-color: transparent;
   transition: box-shadow 0.3s;
 }
-.tournamentStages__tournametMembers__carosel -btn:hover {
+.tournamentStages__carosel -btn:hover {
   background-color: var(--button-dark-bg-color);
 }
-.tournamentStages__tournametMembers__carosel -btn:disabled {
+.tournamentStages__carosel -btn:disabled {
   background-color: var(--disabled-color);
-}
-.tournamentStages__tournametMembers__carosel -btn:active {
-  box-shadow: var(--btn-active-shadow);
 }

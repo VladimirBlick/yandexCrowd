@@ -115,24 +115,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 };document.fonts.load('1em "Merriweather"').then(function () {
 
-  const runningLinetournametMember__containers = document.querySelectorAll('.running-line__tournametMember__container');
+  // const runningLinetournametMember__containers = document.querySelectorAll('.running-line__tournametMember__container');
 
-  runningLinetournametMember__containers.forEach((tournametMember__container) => {
-    const clonedtournametMember__container = tournametMember__container.cloneNode(true);
-    const parentSection = tournametMember__container.parentElement;
-    parentSection.appendChild(clonedtournametMember__container);
-  })
+  // runningLinetournametMember__containers.forEach((tournametMember__container) => {
+  //   const clonedtournametMember__container = tournametMember__container.cloneNode(true);
+  //   const parentSection = tournametMember__container.parentElement;
+  //   parentSection.appendChild(clonedtournametMember__container);
+  // })
 
-  document.querySelectorAll('.running-line__tournametMember__container').forEach(tournametMember__container => {
-    tournametMember__container.classList.add('running-line__animated');
-  });
+  // document.querySelectorAll('.running-line__tournametMember__container').forEach(tournametMember__container => {
+  //   tournametMember__container.classList.add('running-line__animated');
+  // });
 });;function createSlideShow(gridStepsSelector) {
   let currentSlideIndex = 0;
   const gridSteps = document.querySelector(gridStepsSelector);
-  const steps = gridSteps.querySelectorAll('.grid-steps__step');
+  const steps = gridSteps.querySelectorAll('.tournamentStages__list-item');
   const prevButton = document.querySelector('.slider-controls__button_type_prev');
   const nextButton = document.querySelector('.slider-controls__button_type_next');
-  const indicatorstournametMember__container = document.querySelector('.slider-controls__buttons-tournametMember__container');
+  const indicatorstournametMember__container = document.querySelector('.slider-controls__container');
   let isSliderInitialized = false;
   let eventListenersAdded = false;
 
@@ -290,5 +290,5 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  createSlideShow('.grid-steps');
+  createSlideShow('.tournamentStages__list-item');
 });

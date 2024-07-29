@@ -1,4 +1,4 @@
-.tournamentStages__title-tournametMember__container {
+.tournamentStages__title-container {
   display: flex;
   flex-flow: row wrap;
   max-width: min(100%, 800px);
