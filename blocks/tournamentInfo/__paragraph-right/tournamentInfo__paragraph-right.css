@@ -1,0 +1,9 @@
+.tournamentInfo__paragraph-right{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 700px;
+  margin: 70px 0 60px -55px;
+
+}
+

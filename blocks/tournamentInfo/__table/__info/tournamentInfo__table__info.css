@@ -1,0 +1,14 @@
+.tournamentInfo__table__info{
+  margin: 0 0 45px 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .tournamentInfo__table__info{
+    margin: 44px 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tournamentInfo__table__info{
+    margin: 25px 0 25px 0;}
+}

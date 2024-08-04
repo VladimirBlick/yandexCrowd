@@ -1,0 +1,15 @@
+.tournamentInfo__table__content__stroke{
+  position: relative;
+  margin-right: 8px;
+}
+
+
+.tournamentInfo__table__content__stroke::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+}

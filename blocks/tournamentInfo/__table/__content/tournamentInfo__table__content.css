@@ -1,0 +1,15 @@
+.tournamentInfo__table__content{
+  font-family: "GolosText";
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .tournamentInfo__table__content{
+    width: auto;
+    margin: 15px 0 0;
+    padding-bottom: 15px;
+  }
+}
