@@ -9,8 +9,8 @@
 @media screen and (max-width: 768px) {
   .tournamentInfo__table__headline{
     border: none;
-    padding: 0;
     width: auto;
     margin: 10px 0 0;
+    padding: 5px 0 0 0;
   }
 }

@@ -12,8 +12,9 @@
   padding: 0;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 768px) {
   .tournamentInfo__title{
     display: contents;
+    font-size: 28px;
   }
 }
