@@ -3,4 +3,12 @@
   max-width: 1222px;
   margin: 0 auto;
   padding-top: 40px;
+  color: #313131;
+  opacity: 60%;
 }
+
+@media screen and (max-width: 768px){
+  .footer__container{
+  width: 90%;
+  font-size: 16px;
+  }}

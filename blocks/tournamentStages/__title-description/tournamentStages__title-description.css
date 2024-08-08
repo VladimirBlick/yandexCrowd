@@ -9,12 +9,12 @@
 }
 @media (width < 535px) {
   .tournamentStages__title-description {
-    max-width: 250px;
+    max-width: 300px;
   }
 }
 @media (width <= 550px) {
   .tournamentStages__title-description {
-    margin-top: 12px;
+    margin-top: 15px;
   }
 }
 @media (width >= 768px) {

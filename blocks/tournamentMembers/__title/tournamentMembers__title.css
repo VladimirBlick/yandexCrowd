@@ -3,3 +3,10 @@ font-size: 54px;
 line-height: 1.2;
 margin: 0 0 60px;
 }
+
+
+@media (max-width: 768px) {
+  .tournametMembers__title {
+    font-size: 36px;
+    margin: 0 0 35px;
+  }}

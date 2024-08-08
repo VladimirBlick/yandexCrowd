@@ -4,3 +4,8 @@
   margin: 200px auto 136px;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .tournametMember__container {
+    margin: 120px auto 162px;
+  }}

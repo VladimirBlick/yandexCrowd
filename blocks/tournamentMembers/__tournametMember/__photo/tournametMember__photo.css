@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 768px) {
 .tournametMember__photo {
-  width: initial;
-  height: initial;
+  width: 244px;
+  height: 244px;
 }
 }

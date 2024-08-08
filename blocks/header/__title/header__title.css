@@ -1,4 +1,5 @@
 .header__title{
+display: inline;
 width: 100%;
 font-size: 36px;
 margin: 40px auto 0;

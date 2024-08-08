@@ -1,13 +1,16 @@
 .tournamentStages__title {
   max-width: 800px;
   font-size: 54px;
-  line-height: 1.2;
-  margin: 0 0 50px 0;
+  line-height: 1.15;
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .tournamentStages__title {
     /* max-width: 1000px; */
     /* display: flex; */
     flex-flow: column;
+    font-size: 36px;
+    line-height: 1.1;
+
+    }
   }
-}
+

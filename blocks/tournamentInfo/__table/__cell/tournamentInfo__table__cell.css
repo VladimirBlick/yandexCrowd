@@ -11,7 +11,9 @@
 @media screen and (max-width: 768px) {
   .tournamentInfo__table__cell {
     line-height: 1;
-    padding: 0;
+    display: inline-block;
+    border-bottom: none;
+    padding: 0 0 15px 0;
   }
 }
 

@@ -7,5 +7,12 @@
   color: #3057A2;
   text-decoration: none;
    background-color: transparent;
-   margin: -50px 0 0 0;
+   margin: -55px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tournamentInfo__link{
+    margin: 0;
+    font-size: 18px;
+  }
 }

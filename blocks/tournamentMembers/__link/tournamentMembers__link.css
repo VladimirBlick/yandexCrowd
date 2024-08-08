@@ -19,8 +19,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .link {
-    font-size: 18px;
-    line-height: 21.6px;
+  .link_style_outline {
+margin: 20px 0 10px 0;
   }
 }
