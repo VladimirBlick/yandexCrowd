@@ -21,7 +21,7 @@
   .tournamentInfo__table__line {
     display: block;
     position: relative;
-    padding: 10px 0;
+    padding: 13px 0 4px 0;
   }
 
   .tournamentInfo__table__line::after {

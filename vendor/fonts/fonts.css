@@ -1,30 +1,30 @@
 @font-face {
   font-family: "GolosText";
   src: url(./GolosText_Regular.woff) format("woff"),
-  url(./GolosText_Regular.woff) format("woff");
+    url(./GolosText_Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "Merriweather";
   src: url(MerriweatherRegular.woff) format("woff"),
-  url(./MerriweatherRegular.woff) format("woff");
+    url(./MerriweatherRegular.woff) format("woff");
 }
 
-h1{
+h1 {
   font-family: "Merriweather";
   font-weight: 400;
   color: #313131;
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-family: "Merriweather";
   font-weight: 400;
   color: #313131;
   text-transform: uppercase;
 }
 
-h3{
+h3 {
   font-family: "Merriweather";
   font-weight: 400;
   color: #313131;
@@ -32,16 +32,20 @@ h3{
 
 }
 
-p{
+p {
   font-family: "GolosText";
   color: #313131;
 }
 
-button{
+button {
   font-family: "GolosText";
 }
 
-li{
+a {
+  font-family: "GolosText";
+}
+
+li {
   font-family: "GolosText";
   font-weight: bold;
   font-size: 20px;

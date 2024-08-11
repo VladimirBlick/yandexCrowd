@@ -50,6 +50,33 @@
   .tournamentStages__list-item-2 {
     padding-bottom: 35px;
   }
+
+  .tournamentStages__list-item-3 {
+    padding-top: 60px;
+    padding-bottom: 108px;
+  }
+
+  .tournamentStages__list-item-4 {
+    padding-top: 60px;
+    padding-bottom: 28px;
+  }
+
+  .tournamentStages__list-item-5 {
+    padding-top: 0px;
+    padding-bottom: 102px;
+  }
+
+  .tournamentStages__list-item-6 {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    padding-right: 30px;
+  }
+
+  .tournamentStages__list-item-7 {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    padding-right: 30px;
+  }
 }
 
 /* @media (width >= 769px) {

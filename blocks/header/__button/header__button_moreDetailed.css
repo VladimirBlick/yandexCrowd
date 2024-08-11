@@ -1,19 +1,21 @@
-.header__button_moreDetailed{
+.header__button_moreDetailed {
+  width: 165px;
   margin: 14px auto 0;
-  border: 0;
-  background-color: #FFFFFF;
+  border: 2px solid #1F1F1F;
+  background-color: none;
   opacity: 90%;
   line-height: 130%;
+  color: #1F1F1F;
 }
 
-.header__button_moreDetailed:hover{
-  background-color:#1F1F1F;
+.header__button_moreDetailed:hover {
+  background-color: #1F1F1F;
   color: #FFFFFF;
 }
 
-@media screen and (min-width:768px) {
-  .header__button_moreDetailed{
-    margin: 0 0 0 7px;
+@media screen and (max-width:768px) {
+  .header__button_moreDetailed {
+    width: 335px;
   }
 
 }

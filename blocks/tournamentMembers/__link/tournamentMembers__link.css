@@ -1,5 +1,4 @@
-
-.link {
+.tournametMember__link {
   color: #3057a2;
   font-size: 16px;
   font-weight: 400;
@@ -7,19 +6,21 @@
   text-decoration: none;
   margin: 20px 0 0;
 }
-.link_style_outline {
+
+.tournametMember__link_style_outline {
   border-radius: 60px;
   border: 1px solid #3057a2;
   padding: 7px 12px;
   transition: 0.3s;
 }
-.link_style_outline:hover {
+
+.tournametMember__link_style_outline:hover {
   background-color: #3057a2;
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  .link_style_outline {
-margin: 20px 0 10px 0;
+  .tournametMember__link_style_outline {
+    margin: 20px 0 10px 0;
   }
 }

@@ -1,9 +1,11 @@
 .header__background {
   position: absolute;
   top: 0;
-  left: 50%; /* Центрируем изображение */
-  transform: translateX(-50%); /* Смещаем на половину ширины влево */
-  width: 100%;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   height: 775px;
   background-size: cover;
   background-position: center;
@@ -14,10 +16,8 @@
 }
 
 @media screen and (min-width: 767px) {
-.header__background {
-background-image: url('../../../images/header-background-desktop.jpg');
-width: 100%; /* Используем 100% вместо фиксированной ширины */
-max-width: 1920px; /* Максимальная ширина изображения */
-height: 700px;
+  .header__background {
+      background-image: url('../../../images/header-background-desktop.jpg');
+      height: 700px;
   }
 }
