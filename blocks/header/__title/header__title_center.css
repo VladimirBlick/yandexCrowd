@@ -1,12 +1,11 @@
 .header__title_center {
   text-align: center;
-  margin: 0 57px;
+  margin: 0 60px;
   line-height: 110%;
-  /* padding-left: 60px; */
 }
 
 @media screen and (min-width: 767px) {
   .header__title_center {
-    margin: 0 87px;
+    margin: 0 90px;
   }
 }

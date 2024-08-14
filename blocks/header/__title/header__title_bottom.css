@@ -1,6 +1,13 @@
 .header__title_bottom {
+  display: block;
   text-align: right;
-  margin: 0 0 0 27px;
+  margin: -5px 0 0 33px;
   line-height: 110%;
+}
 
+@media screen and (max-width:768px) {
+  .header__title_bottom {
+    width: 100%;
+    margin: 0;
+  }
 }

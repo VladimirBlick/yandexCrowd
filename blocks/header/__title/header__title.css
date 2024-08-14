@@ -8,8 +8,17 @@ margin: 40px auto 0;
 
 @media screen and (min-width: 767px) {
   .header__title{
+    width: 450px;
+    font-size: 55px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__title{
     width: 542px;
     font-size: 60px;
     margin: 0;
   }
 }
+

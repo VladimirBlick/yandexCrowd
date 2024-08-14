@@ -1,6 +1,5 @@
 .header__button_support {
   width: 165px;
-  margin: 38px auto 0;
   border: 0;
   background-color: #1F1F1F;
   color: #fff;
@@ -10,7 +9,6 @@
 .header__button_support:hover {
   background-color: #FBCE51;
   color: #1F1F1F;
-  margin: 38px auto 0;
 }
 
 @media (max-width: 768px) {

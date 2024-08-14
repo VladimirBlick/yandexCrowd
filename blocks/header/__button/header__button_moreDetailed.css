@@ -1,11 +1,11 @@
 .header__button_moreDetailed {
   width: 165px;
-  margin: 14px auto 0;
   border: 2px solid #1F1F1F;
   background-color: none;
   opacity: 90%;
   line-height: 130%;
   color: #1F1F1F;
+  margin-left: 6px;
 }
 
 .header__button_moreDetailed:hover {
@@ -15,6 +15,7 @@
 
 @media screen and (max-width:768px) {
   .header__button_moreDetailed {
+    margin: 12px auto 0;
     width: 335px;
   }
 

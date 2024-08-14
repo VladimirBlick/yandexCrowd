@@ -1,24 +1,18 @@
 .tournamentInfo__collage{
   margin: 0px 0 0 -12px;
-  /* padding: 10px 0 0 20px; */
+  width: 420px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .tournamentInfo__collage{
-    width: 107%;
+    width: 609px;
     margin: 30px auto 0;
   }
 }
 
-/* @media screen and (max-width: 450px) {
+/* @media screen and (min-width: 1280px) {
   .tournamentInfo__collage{
-    width: 375px;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  .tournamentInfo__collage{
-    width: 100%;
+    width: 609px;
+    margin: 30px auto 0;
   }
 } */

@@ -19,5 +19,24 @@
   .header__background {
       background-image: url('../../../images/header-background-desktop.jpg');
       height: 700px;
+      width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1300px) {
+  .header__background {
+      background-position: calc(50% + (1300px - 100vw) * 0.5) center;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .header__background {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      background-position: center;
+      background-size: cover;
   }
 }

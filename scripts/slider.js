@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
       listItems.forEach((item, index) => {
           if (slides[slideIndex].includes(index)) {
               item.style.display = 'flex';
-              // Обновляем содержимое псевдоэлемента с правильным номером
               item.setAttribute('data-number', index + 1);
           } else {
               item.style.display = 'none';

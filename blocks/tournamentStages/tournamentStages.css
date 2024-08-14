@@ -1,19 +1,11 @@
 .tournamentStages {
-  /* position: relative; */
   max-width: 1222px;
   margin: 145px auto 0;
 }
-/* @media (width >= 850px) {
-  .tournamentStages {
-    margin-bottom: 150px;
-  }
-} */
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .tournamentStages {
-    /* max-width: 1000px; */
-    /* display: flex; */
-  width: 90%;
-  margin: 115px auto 0;
+    width: 90%;
+    margin: 115px auto 0;
   }
-    }
+}

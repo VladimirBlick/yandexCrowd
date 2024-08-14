@@ -10,13 +10,13 @@
   height: 182px;
   position: absolute;
   top: 5px;
-  right: calc(50% - 202px);
   background-image: url('../../../images/flight.png');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .tournamentStages__list-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top: 148px;
     background-size: none;
     margin: 0;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (width >= 850px) {
+@media (min-width: 768px) {
   .tournamentStages__list-container {
     width: 100%;
   }
