@@ -1,12 +1,14 @@
 .tournamentInfo__table{
   border-collapse: collapse;
   table-layout: auto;
-  margin: 0;
+  margin: 30px auto 25px;
   padding: 0;
   width: 100%;
+  display: block;
 }
 
-@media screen and (max-width: 768px) {
-  .tournamentInfotable {
-    display: block;
+@media screen and (min-width: 768px) {
+  .tournamentInfo__table {
+    margin: 0 auto 45px;
   }}
+

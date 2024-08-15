@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 768px) {
   .tournamentInfo__collage{
-    width: 450px;
+    width: 390px;
     margin: -10px 0 0 -18px;
   }
 }
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 900px) and (min-width: 769px) {
   .tournamentInfo__collage{
-    display: none;
+    width: 350px;
   }
 }
 

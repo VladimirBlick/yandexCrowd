@@ -13,3 +13,9 @@
     margin: 0 auto;
     width: 90%;
   }}
+
+  @media screen and (max-width: 900px) and (min-width: 769px) {
+    .tournamentInfo__container {
+      gap: 10px;
+    }
+  }
