@@ -1,11 +1,11 @@
 .tournametMember__container {
   max-width: 1222px;
-  width: 92%;
-  margin: 200px auto 136px;
+  width: 90%;
+  margin: 200px auto 139px;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .tournametMember__container {
-    margin: 120px auto 162px;
+    margin: 117px auto 162px;
   }}

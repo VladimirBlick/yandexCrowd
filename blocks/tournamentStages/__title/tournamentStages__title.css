@@ -3,10 +3,18 @@
   font-size: 54px;
   line-height: 1.15;
 }
+
+@media (max-width: 1280px) {
+  .tournamentStages__title {
+    flex-flow: column;
+    font-size: 45px;
+    line-height: 1.1;
+
+    }
+  }
+
 @media (max-width: 768px) {
   .tournamentStages__title {
-    /* max-width: 1000px; */
-    /* display: flex; */
     flex-flow: column;
     font-size: 36px;
     line-height: 1.1;

@@ -3,44 +3,46 @@
   position: relative;
   padding: 0;
   margin: 55px 0 0 0;
+  width: 100%;
 }
+
 .tournamentStages__list-container:after {
   content: "";
-  width: 335px;
-  height: 182px;
   position: absolute;
-  top: 5px;
   background-image: url('../../../images/flight.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .tournamentStages__list-container {
-    /* overflow: hidden; */
     padding-top: 148px;
-    background-size: none;
     margin: 0;
   }
+
   .tournamentStages__list-container:after {
     width: 100%;
     height: 200px;
     top: 10px;
     left: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center top;
   }
 }
 
-@media (min-width: 768px) {
-  .tournamentStages__list-container {
-    width: 100%;
+@media (min-width: 768px) and (max-width: 1365px) {
+  .tournamentStages__list-container:after {
+    width: 350px;
+    height: 235px;
+    right: 0;
+    bottom: -40px;
   }
-  .tournamentStages__list-container::after {
+}
+
+@media (min-width: 1366px) {
+  .tournamentStages__list-container:after {
     width: 400px;
     height: 235px;
-    bottom: -1px;
     right: -60px;
-    top: unset;
+    bottom: -40px;
   }
 }

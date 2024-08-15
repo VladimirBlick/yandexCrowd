@@ -1,21 +1,6 @@
-
-/* .tournamentInfo__table__line:first-child .tournamentInfo__table__cell {
-  padding-top: 0;
-} */
-
 .tournamentInfo__table__line:last-child .tournamentInfo__table__cell {
-  /* padding-bottom: 0; */
   border-bottom: none;
 }
-
- /* @media screen and (max-width: 768px) {
-  .tournamentInfo__table__line {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .tournamentInfo__table__line {
@@ -36,5 +21,5 @@
 
   .tournamentInfo__table__line:last-child::after {
     border-bottom: none;
-}
+  }
 }

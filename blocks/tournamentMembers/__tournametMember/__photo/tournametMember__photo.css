@@ -3,6 +3,12 @@
   height: 320px;
 }
 
+@media screen and (max-width: 1280px) {
+  .tournametMember__photo {
+    width: 290px;
+    height: 290px;
+  }}
+
 @media screen and (max-width: 768px) {
 .tournametMember__photo {
   width: 244px;

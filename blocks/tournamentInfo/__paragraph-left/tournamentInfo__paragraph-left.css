@@ -1,8 +1,5 @@
 .tournamentInfo__paragraph-left{
-  overflow: hidden;
-  font-family: var(--header-font);
   font-variant-numeric: lining-nums proportional-nums;
-  /* font-size: 36px; */
   font-style: normal;
   font-weight: 400;
   line-height: 48.6px;
