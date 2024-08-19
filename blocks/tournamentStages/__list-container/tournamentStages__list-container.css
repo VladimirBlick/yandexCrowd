@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tournamentStages__list-container {
     padding-top: 148px;
     margin: 0;

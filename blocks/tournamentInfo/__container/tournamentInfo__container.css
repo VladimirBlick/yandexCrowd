@@ -6,7 +6,7 @@
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 787px) {
   .tournamentInfo__container {
     flex-wrap: wrap;
     gap: 25px;

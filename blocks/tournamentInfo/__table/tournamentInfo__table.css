@@ -1,4 +1,5 @@
 .tournamentInfo__table{
+  position: relative;
   border-collapse: collapse;
   table-layout: auto;
   margin: 30px auto 25px;

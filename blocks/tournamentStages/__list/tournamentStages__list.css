@@ -3,7 +3,7 @@
   counter-reset: decimal-circled-counter;
 }
 
-@media (width >= 769px) {
+@media (width >= 767px) {
   .tournamentStages__list {
     display: grid;
     gap: 20px;
@@ -11,7 +11,7 @@
   }
 }
 
-@media (850px <= width < 1222px) {
+@media (765px <= width < 1222px) {
   .tournamentStages__list {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
