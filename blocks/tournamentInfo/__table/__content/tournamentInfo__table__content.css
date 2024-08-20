@@ -1,4 +1,4 @@
-.tournamentInfo__table__content{
+.tournamentInfo__table__content {
   font-family: "GolosText";
   width: 56.5%;
   font-weight: 600;
@@ -7,19 +7,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tournamentInfo__table__content{
+  .tournamentInfo__table__content {
     width: auto;
     display: inline-block;
-  }}
+  }
+}
 
-  @media screen and (max-width: 768px) {
-    .tournamentInfo__table__content__mobile-break::before {
-        content: '\A';
-        white-space: pre;
-    }
+@media screen and (max-width: 768px) {
+  .tournamentInfo__table__content__mobile-break::before {
+    content: '\A';
+    white-space: pre;
+  }
 }
 
 @media screen and (max-width: 900px) and (min-width: 769px) {
-  .tournamentInfo__table__content  {
+  .tournamentInfo__table__content {
     font-size: 18px;
-  }}
+  }
+}

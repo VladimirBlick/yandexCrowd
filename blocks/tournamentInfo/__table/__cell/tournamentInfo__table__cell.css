@@ -1,7 +1,7 @@
-.tournamentInfo__table__cell{
+.tournamentInfo__table__cell {
   padding: 16px 21px 16px 16px;
   border-bottom: 2px solid #D0D0D0;
- font-family: "GolosText";
+  font-family: "GolosText";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -16,4 +16,3 @@
     padding: 0 0 15px 0;
   }
 }
-

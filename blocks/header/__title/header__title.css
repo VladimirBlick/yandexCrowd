@@ -1,13 +1,12 @@
-.header__title{
-display: inline;
-width: 100%;
-font-size: 36px;
-margin: 40px auto 0;
-
+.header__title {
+  display: inline;
+  width: 100%;
+  font-size: 36px;
+  margin: 40px auto 0;
 }
 
 @media screen and (min-width: 769px) {
-  .header__title{
+  .header__title {
     width: 450px;
     font-size: 55px;
     margin: 0;
@@ -15,10 +14,9 @@ margin: 40px auto 0;
 }
 
 @media screen and (min-width: 1280px) {
-  .header__title{
+  .header__title {
     width: 542px;
     font-size: 60px;
     margin: 0;
   }
 }
-

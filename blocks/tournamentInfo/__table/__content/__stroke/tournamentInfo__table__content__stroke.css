@@ -3,7 +3,6 @@
   margin-right: 8px;
 }
 
-
 .tournamentInfo__table__content__stroke::after {
   content: '';
   position: absolute;

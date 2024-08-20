@@ -1,4 +1,4 @@
-.tournamentInfo__table{
+.tournamentInfo__table {
   position: relative;
   border-collapse: collapse;
   table-layout: auto;
@@ -11,5 +11,5 @@
 @media screen and (min-width: 769px) {
   .tournamentInfo__table {
     margin: 0 auto 45px;
-  }}
-
+  }
+}

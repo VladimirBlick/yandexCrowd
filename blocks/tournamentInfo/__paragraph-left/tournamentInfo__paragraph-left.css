@@ -1,4 +1,4 @@
-.tournamentInfo__paragraph-left{
+.tournamentInfo__paragraph-left {
   font-variant-numeric: lining-nums proportional-nums;
   font-style: normal;
   font-weight: 400;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tournamentInfo__paragraph-left{
+  .tournamentInfo__paragraph-left {
     display: contents;
   }
 }

@@ -10,7 +10,7 @@ function createtournametMembers__carosel(tournametMember__containerSelector) {
 
   let currentIndex = 0;
   let itemWidth = tournametMembers[0].offsetWidth;
-  let gapWidth = 20; // Значение column-gap
+  let gapWidth = 20;
   let autoSlideTimeout;
 
   function updateItemWidth() {
@@ -92,7 +92,7 @@ function createtournametMembers__carosel(tournametMember__containerSelector) {
     restartAutoSlide();
   }, 150));
 
-  // Клонируем элементы для создания иллюзии бесконечной карусели
+  // элементы для создания иллюзии бесконечной карусели
   const clones = Array.from(tournametMembers).map(item => item.cloneNode(true));
   clones.forEach(clone => tournametMembersList.appendChild(clone));
 

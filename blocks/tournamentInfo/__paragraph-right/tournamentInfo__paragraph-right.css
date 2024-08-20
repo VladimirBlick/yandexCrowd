@@ -1,4 +1,4 @@
-.tournamentInfo__paragraph-right{
+.tournamentInfo__paragraph-right {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tournamentInfo__paragraph-right{
+  .tournamentInfo__paragraph-right {
     width: 100%;
     margin: 0 auto;
     gap: 0;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 769px) {
-  .tournamentInfo__paragraph-right{
+  .tournamentInfo__paragraph-right {
     width: 80%;
     margin-right: auto;
     margin-left: 0;

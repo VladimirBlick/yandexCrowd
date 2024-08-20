@@ -125,30 +125,3 @@
 .slider-controls__total-items {
   opacity: 0.6;
 }
-
-/* @media screen and (max-width: 600px) {
-  .slider-controls__button {
-    width: 36px;
-    height: 36px;
-  }
-
-  .slider-controls__button::after {
-    content: "";
-    width: 10px;
-    height: 18px;
-    background-size: contain;
-    top: 10px;
-    left: 11px;
-  }
-
-  .slider-controls__button_type_next::after {
-    top: 9px;
-    left: 14px;
-  }
-} */
-
-/* @media (min-width: 769px) {
-  .slider-controls {
-    display: none;
-  }
-} */

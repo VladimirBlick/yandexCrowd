@@ -9,4 +9,5 @@
 @media (max-width: 768px) {
   .tournametMembers__list {
     column-gap: 0;
-  }}
+  }
+}

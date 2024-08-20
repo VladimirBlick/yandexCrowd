@@ -17,21 +17,6 @@
 @import url(../blocks/runningLine/runningLine.css);
 @import url(../blocks/runningLine/__content/runningLine__content.css);
 @import url(../blocks/runningLine/__point/runningLine__point.css);
-
-/* @import url(../blocks/tournamentInfo/tournamentInfo.css);
-@import url(../blocks/tournamentInfo/__container/tournamentInfo__container.css);
-@import url(../blocks/tournamentInfo/__container-bottom/tournamentInfo__container-bottom.css);
-@import url(../blocks/tournamentInfo/__img/tournamentInfo__img.css);
-@import url(../blocks/tournamentInfo/__title/tournamentInfo__title.css);
-@import url(../blocks/tournamentInfo/__title/tournamentInfo__title_red.css);
-@import url(../blocks/tournamentInfo/__collage/tournamentInfo__collage.css);
-@import url(../blocks/tournamentInfo/__grid/tournamentInfo__grid.css);
-@import url(../blocks/tournamentInfo/__title-bender/tournamentInfo__title-bender.css);
-@import url(../blocks/tournamentInfo/__title-bender/tournamentInfo__title-bender_red.css);
-@import url(../blocks/tournamentInfo/__table/tournamentInfo__table.css);
-@import url(../blocks/tournamentInfo/__table/tournamentInfo__table_red.css);
-@import url(../blocks/tournamentInfo/__table-bottom/tournamentInfo__table-bottom.css); */
-
 @import url(../blocks/tournamentInfo/tournamentInfo.css);
 @import url(../blocks/tournamentInfo/__text/tournamentInfo__text.css);
 @import url(../blocks/tournamentInfo/__collage/tournamentInfo__collage.css);
@@ -50,8 +35,6 @@
 @import url(../blocks/tournamentInfo/__title/tournamentInfo__title.css);
 @import url(../blocks/tournamentInfo/__title/__text/tournamentInfo__title__text_red.css);
 @import url(../blocks/tournamentInfo/__title/__text/tournamentInfo__title__text.css);
-
-
 @import url(../blocks/tournamentStages/tournamentStages.css);
 @import url(../blocks/tournamentStages/__tournametMembers__carosel-btn/tournamentStages__tournametMembers__carosel-btn.css);
 @import url(../blocks/tournamentStages/__tournametMembers__carosel-btn/tournamentStages_tournametMembers__carosel-btn_next.css);
@@ -65,13 +48,6 @@
 @import url(../blocks/tournamentStages/__title-tournametMember__container/tournamentStages__title-tournametMember__container.css);
 @import url(../blocks/tournamentStages/__title-description/tournamentStages__title-description.css);
 @import url(../blocks/tournamentStages/__title/tournamentStages__title.css);
-
-@import url(../blocks/tournamentStages/__carousel-controls/tournamentStages__carousel-controls.css);
-@import url(../blocks/tournamentStages/__carousel-current/tournamentStages__carousel-current.css);
-@import url(../blocks/tournamentStages/__carousel-btn/tournamentStages_carousel-btn_next.css);
-@import url(../blocks/tournamentStages/__carousel-btn/tournamentStages__carousel-btn.css);
-@import url(../blocks/tournamentStages/__carousel-dot/tournamentStages__carousel-dot.css);
-
 @import url(../blocks/tournamentMembers/tournamentMembers.css);
 @import url(../blocks/tournamentMembers/__title/tournamentMembers__title.css);
 @import url(../blocks/tournamentMembers/__tournametMember/tournametMember.css);
@@ -85,24 +61,6 @@
 @import url(../blocks/tournamentMembers/__carosel/tournametMembers__carosel.css);
 @import url(../blocks/tournamentMembers/__link/tournamentMembers__link.css);
 @import url(../blocks/tournamentMembers/__tournametMember/__container/tournametMember__container.css);
-
-/* @import url(../blocks/tournamentMembers/tournamentMembers.css);
-@import url(../blocks/tournamentMembers/__btn-more/tournamentMembers__btn-more.css);
-@import url(../blocks/tournamentMembers/__tournametMember__container/tournamentMembers__tournametMember__container.css);
-@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn.css);
-@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn.css);
-
-@import url(../blocks/tournamentMembers/__controls-counter/tournamentMembers__controls-counter.css);
-@import url(../blocks/tournamentMembers/__controls/tournamentMembers__controls.css);
-@import url(../blocks/tournamentMembers/__controls-btn/tournamentMembers__controls-btn_next.css);
-@import url(../blocks/tournamentMembers/__list-item/tournamentMembers__list-item.css);
-@import url(../blocks/tournamentMembers/__list/tournamentMembers__list.css);
-@import url(../blocks/tournamentMembers/__name/tournamentMembers__name.css);
-@import url(../blocks/tournamentMembers/__picture/tournamentMembers__picture.css);
-@import url(../blocks/tournamentMembers/__rating/tournamentMembers__rating.css);
-@import url(../blocks/tournamentMembers/__title-tournametMember__container/tournamentMembers__title-tournametMember__container.css);
-@import url(../blocks/tournamentMembers/__title/tournamentMembers__title.css); */
-
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/footer/__container/footer__container.css);
