@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: runLeft 60s linear infinite;
+  animation: runLeft 40s linear infinite;
   font-family: "Merriweather";
   color: white;
 }
 
-.runningLine__content[paused ="true"] {
+.runningLine__content[paused="true"] {
   animation-play-state: paused;
 }
 
@@ -25,7 +25,7 @@
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
