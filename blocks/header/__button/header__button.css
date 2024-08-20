@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
   .header__button {
     width: 263px;
     height: 72px;

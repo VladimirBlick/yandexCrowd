@@ -4,7 +4,7 @@
   line-height: 110%;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1280px) {
   .header__title_center {
     margin: 0 90px;
   }

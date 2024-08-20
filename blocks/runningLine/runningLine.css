@@ -5,7 +5,7 @@
   height: 38px;
   background-color: #F54932;
 }
-@media (width >= 768px) {
+@media (min-width: 769px) {
   .runningLine {
     height: 60px;
   }

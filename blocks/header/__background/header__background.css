@@ -5,7 +5,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  width: 100vw;
+  /* width: 100vw; */
   height: 775px;
   background-size: cover;
   background-position: center;
@@ -15,21 +15,21 @@
   text-align: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   .header__background {
       background-image: url('../../../images/header-background-desktop.jpg');
       height: 700px;
-      width: 100%;
+      /* width: 100%; */
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1300px) {
+@media screen and (min-width: 769px) and (max-width: 1300px) {
   .header__background {
       background-position: calc(50% + (1300px - 100vw) * 0.5) center;
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .header__background {
       left: 0;
       right: 0;

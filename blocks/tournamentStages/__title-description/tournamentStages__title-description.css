@@ -17,7 +17,7 @@
     margin-top: 15px;
   }
 }
-@media (width >= 768px) {
+@media (min-width: 769px) {
   .tournamentStages__title-description {
     font-size: 20px;
     line-height: 24px;

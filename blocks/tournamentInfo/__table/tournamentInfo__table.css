@@ -8,7 +8,7 @@
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .tournamentInfo__table {
     margin: 0 auto 45px;
   }}

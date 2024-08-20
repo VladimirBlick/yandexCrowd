@@ -2,28 +2,34 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: runLeft 40s linear infinite;
+  animation: runLeft 60s linear infinite;
   font-family: "Merriweather";
-  color: white;}
-.runningLine__content[paused="true"] {
+  color: white;
+}
+
+.runningLine__content[paused ="true"] {
   animation-play-state: paused;
 }
-.runningLine__content > i {
+
+.runningLine__content>i {
   width: 6px;
   height: 6px;
   border-radius: 6px;
   margin: 0 12px;
   background-color: #F54932;
 }
+
 @keyframes runLeft {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
-@media (width >= 768px) {
+
+@media (min-width: 769px) {
   .runningLine__content {
     font-size: 22px;
   }

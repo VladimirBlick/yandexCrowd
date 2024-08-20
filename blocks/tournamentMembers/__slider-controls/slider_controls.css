@@ -1,7 +1,7 @@
 .tournametMembers__slider-controls {
   position: absolute;
   right: 0;
-  top: -115px;
+  top: -110px;
   width: 152px;
 }
 
@@ -147,8 +147,8 @@
   }
 } */
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .slider-controls {
     display: none;
   }
-}
+} */
