@@ -1,26 +1,27 @@
 .tournamentStages__title-description {
   display: inline-block;
+  font-family: "GolosText";
   color: #3057A2;
   font-size: 18px;
-  line-height: 21.6px;
+  line-height: 1.2;
   letter-spacing: 0;
   text-transform: none;
-  max-width: 280px;
+  margin-top: 15px;
+  /* max-width: 280px; */
 }
-@media (width < 535px) {
+@media (min-width: 535px) {
   .tournamentStages__title-description {
     max-width: 300px;
   }
 }
-@media (width <= 550px) {
+/* @media (min-width: 550px) {
   .tournamentStages__title-description {
     margin-top: 15px;
   }
-}
+} */
 @media (min-width: 769px) {
   .tournamentStages__title-description {
     font-size: 20px;
-    line-height: 24px;
     margin-top: 0;
   }
 }

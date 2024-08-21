@@ -1,9 +1,8 @@
-.tournamentInfo__container{
+.tournamentInfo__container {
   display: flex;
   gap: 64px;
   align-items: center;
   justify-content: center;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -12,10 +11,11 @@
     gap: 25px;
     margin: 0 auto;
     width: 90%;
-  }}
-
-  @media screen and (max-width: 900px) and (min-width: 769px) {
-    .tournamentInfo__container {
-      gap: 10px;
-    }
   }
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+  .tournamentInfo__container {
+    gap: 10px;
+  }
+}

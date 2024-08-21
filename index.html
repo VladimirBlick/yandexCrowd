@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,7 @@
   <link rel="stylesheet" href="pages/index.css">
   <title>Chess Tournament</title>
 </head>
-
 <body class="page">
-
   <header class="header">
     <div class="header__container">
       <img src="./images/header-logo.svg" alt="Логотип" class="header__logo">
@@ -28,20 +25,15 @@
     </div>
     <div class="header__background"></div>
   </header>
-
   <main>
-
-    <section class="runningLine">
-      <div>
-        <span class="runningLine__content" animated>ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ! <span
+      <div class="runningLine">
+        <p class="runningLine__content">ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ! <span
             class="runningLine__point">·</span> ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ!<span
             class="runningLine__point">·</span>ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ!<span
             class="runningLine__point">·</span>ШАХМАТЫ ДВИГАЮТ ВПЕРЕД НЕ ТОЛЬКО КУЛЬТУРУ, НО И ЭКОНОМИКУ!<span
             class="runningLine__point">·</span>ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ!<span
-            class="runningLine__point">·</span></span>
+            class="runningLine__point">·</span></p>
       </div>
-    </section>
-
     <section class="tournamentInfo" id="tournamentInfo">
       <div class="tournamentInfo__container">
         <h3 class="tournamentInfo__title">
@@ -57,7 +49,6 @@
           <h3 class="tournamentInfo__title">и Сеанс <span class="tournamentInfo__title__text_red">одновременной игры
               в&nbsp;шахматы на&nbsp;160&nbsp;досках</span>
             гроссмейстера О.&nbsp;Бендера</h3>
-
           <table class="tournamentInfo__table">
             <tr class="tournamentInfo__table__line">
               <td class="tournamentInfo__table__cell tournamentInfo__table__headline">Место проведения:</td>
@@ -90,11 +81,10 @@
         </div>
       </div>
     </section>
-
     <section class=tournamentStages id="tournamentStages">
       <div class=tournamentStages__title-container>
-        <h2 class=tournamentStages__title> Этапы преображения Васюков <p class=tournamentStages__title-description>
-            Будущие источники обогащения васюкинцев</p>
+        <h2 class=tournamentStages__title> Этапы преображения Васюков <span class=tournamentStages__title-description>
+            Будущие источники обогащения васюкинцев</span>
         </h2>
       </div>
       <div class=tournamentStages__list-container>
@@ -116,8 +106,7 @@
             и&nbsp;Мельбурн</li>
         </ul>
       </div>
-
-      <section class="slider-controls">
+      <div class="slider-controls">
         <button class="slider-controls__button slider-controls__button_type_prev">
         </button>
         <div class="slider-controls__indicator">
@@ -126,9 +115,8 @@
         </div>
         <button class="slider-controls__button slider-controls__button_type_next">
         </button>
-      </section>
+      </div>
     </section>
-
     <section class="tournametMembers" id="tournametMembers">
       <div class="tournametMember__container">
         <h2 class="section-title tournametMembers__title">Участники турнира</h2>
@@ -193,31 +181,17 @@
         </div>
       </div>
     </section>
-
-    <section class="runningLine">
-      <div>
-        <span class="runningLine__content" animated>ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ! <span
-            class="runningLine__point">·</span> ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ!<span
-            class="runningLine__point">·</span>ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ!<span
-            class="runningLine__point">·</span>ШАХМАТЫ ДВИГАЮТ ВПЕРЕД НЕ ТОЛЬКО КУЛЬТУРУ, НО И ЭКОНОМИКУ!<span
-            class="runningLine__point">·</span>ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ!<span
-            class="runningLine__point">·</span></span>
-      </div>
-    </section>
-
+    <div class="runningLine"></div>
   </main>
-
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__container">
       <p class="footer__copyright">Все персонажи, события и цитаты являются вымышленными и&nbsp;не&nbsp;принадлежат
         создателям сайта. С&nbsp;подробностями можно познакомиться в&nbsp;главе XXXIV романа Ильи Ильфа и&nbsp;Евгения
         Петрова «Двенадцать стульев».</p>
     </div>
   </footer>
-
   <script type="module" src="./scripts/slider-members.js"></script>
   <script type="module" src="./scripts/slider-stage.js"></script>
-
+  <script type="module" src="./scripts/running-line.js"></script>
 </body>
-
 </html>
