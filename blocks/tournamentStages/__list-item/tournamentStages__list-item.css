@@ -1,13 +1,34 @@
 .tournamentStages__list-item {
+  position: relative;
+  z-index: 1;
   display: flex;
   box-sizing: border-box;
-  background-image: url('../../../images/header-background-mobile.jpg');
+  background-color: #E9DED4;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
   padding: 20px 20px 20px 25px;
   min-height: 110px;
   align-items: start;
+}
+
+.tournamentStages__list-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../../images/header-background-overlay.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+}
+
+.tournamentStages__list-item > * {
+  position: relative;
+  z-index: 1;
 }
 
 .tournamentStages__list-item-1 { grid-area: item-1; }
@@ -18,7 +39,7 @@
 .tournamentStages__list-item-6 { grid-area: item-6; }
 .tournamentStages__list-item-7 {
   grid-area: item-7;
-  padding: 20px 320px 0 20px;
+  padding: 20px 320px 20px 20px;
 }
 
 .tournamentStages__list-item::before {
@@ -36,6 +57,8 @@
   font-weight: bold;
   background: white;
   margin-right: 14px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {

@@ -5,6 +5,10 @@
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__content/header__content.css);
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__container/__back/header__container__back.css);
+@import url(../blocks/header/__background/__horse/header__background__horse.css);
+@import url(../blocks/header/__background/__pawn/header__background__pawn.css);
+@import url(../blocks/header/__background/__overlay/header__background__overlay.css);
 @import url(../blocks/header/__background/header__background.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__title/header__title_top.css);

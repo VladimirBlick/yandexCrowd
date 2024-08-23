@@ -1,0 +1,16 @@
+.header__container__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  z-index: -4;
+  background-color: #E9DED4;
+}
+
+@media screen and (max-width:769px) {
+  .header__container__back{
+  height: 780px;
+  }
+}
