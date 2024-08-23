@@ -24,19 +24,10 @@
   }
 }
 
-/* @media screen and (max-width: 768px) {
-  .header__background__horse {
-      background-position: 99% 410px;
-      height: 155px;
-      margin: 150px auto;
-      background-size: auto 47%;
-  }
-} */
-
 @media screen and (max-width: 768px) {
   .header__background__horse {
 
-      margin: 550px 200px 0;
-      background-size: auto 47%;
+      margin: 580px 5px;
+      background-size: auto 46%;
   }
 }

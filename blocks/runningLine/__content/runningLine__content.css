@@ -2,13 +2,10 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: runLeft 40s linear infinite;
+  animation: moveLeft 30s linear infinite;
   font-family: "Merriweather";
   color: white;
-}
-
-.runningLine__content[paused="true"] {
-  animation-play-state: paused;
+  text-transform: uppercase;
 }
 
 .runningLine__content>i {
@@ -32,5 +29,14 @@
 @media (min-width: 769px) {
   .runningLine__content {
     font-size: 22px;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

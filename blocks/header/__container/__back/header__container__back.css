@@ -9,7 +9,7 @@
   background-color: #E9DED4;
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:768px) {
   .header__container__back{
   height: 780px;
   }

@@ -4,6 +4,9 @@
   overflow: hidden;
   height: 38px;
   background-color: #F54932;
+
+  width: 100%;
+  white-space: nowrap;
 }
 @media (min-width: 769px) {
   .runningLine {
