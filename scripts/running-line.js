@@ -1,39 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
   function setupRunningLine(runningLine) {
     const content = runningLine.querySelector('.runningLine__content');
+    if (!content) return; // Проверка наличия контента
+
     const containerWidth = runningLine.offsetWidth;
     const contentWidth = content.offsetWidth;
 
-    const originalContent = content.innerHTML;
-    content.innerHTML = '';
+    // Вычисляем количество необходимых клонов
+    const clonesCount = Math.ceil(containerWidth / contentWidth) + 1;
 
-    // добавляем клоны пока содержимое не станет как минимум в два раза шире контейнера
-    while (content.offsetWidth < containerWidth * 2) {
-      content.innerHTML += originalContent;
+    // Создаем фрагмент для оптимизации вставки
+    const fragment = document.createDocumentFragment();
+
+    // Создаем необходимое количество клонов
+    for (let i = 0; i < clonesCount; i++) {
+      fragment.appendChild(content.cloneNode(true));
     }
 
-    // еще один клон для обеспечения плавного перехода
-    content.innerHTML += originalContent;
+    // Заменяем содержимое одним обновлением DOM
+    runningLine.innerHTML = '';
+    runningLine.appendChild(fragment);
 
-    // длительность анимации на основе ширины содержимого
-    const duration = content.offsetWidth / 45;
-    content.style.animationDuration = `${duration}s`;
+    // Устанавливаем длительность анимации
+    const totalWidth = contentWidth * clonesCount;
+    const duration = totalWidth / 45;
+    runningLine.style.animationDuration = `${duration}s`;
   }
 
-  // настройка для оригинальной бегущей строки
-  const originalRunningLine = document.querySelector('.runningLine');
-  setupRunningLine(originalRunningLine);
+  // Находим все бегущие строки
+  const runningLines = document.querySelectorAll('.runningLine');
 
-  // клонирование и настройка для новой бегущей строки
-  const clonedRunningLine = originalRunningLine.cloneNode(true);
-  const runningLineContainer = document.querySelector('.runningLine:last-of-type');
-  runningLineContainer.innerHTML = '';
-  runningLineContainer.appendChild(clonedRunningLine);
-  setupRunningLine(runningLineContainer);
+  // Настраиваем каждую бегущую строку
+  runningLines.forEach(setupRunningLine);
 
-  // перезапуск настройки при изменении размера окна
-  window.addEventListener('resize', function() {
-    setupRunningLine(originalRunningLine);
-    setupRunningLine(runningLineContainer);
-  });
+  // Обработчик изменения размера окна
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return function() {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => func.apply(this, arguments), delay);
+    };
+  };
+
+  const handleResize = debounce(() => {
+    runningLines.forEach(setupRunningLine);
+  }, 250);
+
+  window.addEventListener('resize', handleResize);
 });
