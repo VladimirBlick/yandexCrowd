@@ -32,7 +32,7 @@
 
 @media (min-width: 769px) and (max-width: 1365px) {
   .tournamentStages__list-container:after {
-    width: 350px;
+    width: 340px;
     height: 235px;
     right: 0;
     bottom: -40px;

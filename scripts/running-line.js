@@ -6,34 +6,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const containerWidth = runningLine.offsetWidth;
     const contentWidth = content.offsetWidth;
 
-    // Вычисляем количество необходимых клонов
+    // вычисляем кол-во клонов
     const clonesCount = Math.ceil(containerWidth / contentWidth) + 1;
 
-    // Создаем фрагмент для оптимизации вставки
+    // создаем фрагмент для оптимизации вставки
     const fragment = document.createDocumentFragment();
 
-    // Создаем необходимое количество клонов
+    // создаем необходимое количество клонов
     for (let i = 0; i < clonesCount; i++) {
       fragment.appendChild(content.cloneNode(true));
     }
 
-    // Заменяем содержимое одним обновлением DOM
+    // замена содержимого одним обновлением DOM
     runningLine.innerHTML = '';
     runningLine.appendChild(fragment);
 
-    // Устанавливаем длительность анимации
+    // настройка длительности анимации
     const totalWidth = contentWidth * clonesCount;
     const duration = totalWidth / 45;
     runningLine.style.animationDuration = `${duration}s`;
   }
 
-  // Находим все бегущие строки
+  // находим все бегущие строки
   const runningLines = document.querySelectorAll('.runningLine');
 
-  // Настраиваем каждую бегущую строку
+  // настраиваем каждую бегущую строку
   runningLines.forEach(setupRunningLine);
 
-  // Обработчик изменения размера окна
+  // обработчик изменения размера окна
   const debounce = (func, delay) => {
     let timeoutId;
     return function() {

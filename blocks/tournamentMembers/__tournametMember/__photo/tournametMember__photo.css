@@ -3,7 +3,7 @@
   height: 320px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 960px) {
   .tournametMember__photo {
     width: 290px;
     height: 290px;

@@ -2,15 +2,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 700px;
+  height: 800px;
   width: 100%;
   background-image: url('../../../../images/header-background-overlay.jpg');
   z-index: -2;
   mix-blend-mode: color-burn;
-}
-
-@media screen and (max-width: 767px) {
-  .header__background__overlay{
-    height: 800px;
-  }
 }

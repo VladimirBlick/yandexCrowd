@@ -11,3 +11,9 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width:769px) and (max-width: 1350px) {
+  .tournametMember {
+    width: 50%;
+  }
+}

@@ -34,28 +34,19 @@
 @import url(../blocks/tournamentInfo/__table/__content/tournamentInfo__table__content.css);
 @import url(../blocks/tournamentInfo/__table/__content/__stroke/tournamentInfo__table__content__stroke.css);
 @import url(../blocks/tournamentInfo/__table/__headline/tournamentInfo__table__headline.css);
-/* @import url(../blocks/tournamentInfo/__table/__info/tournamentInfo__table__info.css); */
 @import url(../blocks/tournamentInfo/__table/__line/tournamentInfo__table__line.css);
 @import url(../blocks/tournamentInfo/__title/tournamentInfo__title.css);
 @import url(../blocks/tournamentInfo/__title/__text/tournamentInfo__title__text_red.css);
 @import url(../blocks/tournamentInfo/__title/__text/tournamentInfo__title__text.css);
 @import url(../blocks/tournamentStages/tournamentStages.css);
-/* @import url(../blocks/tournamentStages/__tournametMembers__carosel-btn/tournamentStages__tournametMembers__carosel-btn.css);
-@import url(../blocks/tournamentStages/__tournametMembers__carosel-btn/tournamentStages_tournametMembers__carosel-btn_next.css);
-@import url(../blocks/tournamentStages/__tournametMembers__carosel-controls/tournamentStages__tournametMembers__carosel-controls.css);
-@import url(../blocks/tournamentStages/__tournametMembers__carosel-current/tournamentStages__tournametMembers__carosel-current.css);
-@import url(../blocks/tournamentStages/__tournametMembers__carosel-dot/tournamentStages__tournametMembers__carosel-dot.css); */
-/* @import url(../blocks/tournamentStages/__list-tournametMember__container/tournamentStages__list-tournametMember__container.css); */
 @import url(../blocks/tournamentStages/__list-item/tournamentStages__list-item.css);
 @import url(../blocks/tournamentStages/__list/tournamentStages__list.css);
 @import url(../blocks/tournamentStages/__list-container/tournamentStages__list-container.css);
-/* @import url(../blocks/tournamentStages/__title-tournametMember__container/tournamentStages__title-tournametMember__container.css); */
 @import url(../blocks/tournamentStages/__title-description/tournamentStages__title-description.css);
 @import url(../blocks/tournamentStages/__title/tournamentStages__title.css);
 @import url(../blocks/tournamentMembers/tournamentMembers.css);
 @import url(../blocks/tournamentMembers/__title/tournamentMembers__title.css);
 @import url(../blocks/tournamentMembers/__tournametMember/tournametMember.css);
-/* @import url(../blocks/tournamentMembers/__tournametMember/__more/tournametMember__more.css); */
 @import url(../blocks/tournamentMembers/__tournametMember/__name/tournametMember__name.css);
 @import url(../blocks/tournamentMembers/__tournametMember/__caption/tournametMember__caption.css);
 @import url(../blocks/tournamentMembers/__tournametMember/__photo/tournametMember__photo.css);
