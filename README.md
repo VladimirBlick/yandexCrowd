@@ -1,6 +1,7 @@
 # YandexCraud
 Верстка адаптивного лендинга по макету из Figma, используя HTML / CSS / JS (без библиотек и фреймворков).
 
+
 <img src="images/header-logo.svg" width="332" height="50" alt="logo horses">
 
 ## Особенности проекта:
