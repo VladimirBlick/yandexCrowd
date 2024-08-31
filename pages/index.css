@@ -47,6 +47,7 @@
 @import url(../blocks/tournamentMembers/tournamentMembers.css);
 @import url(../blocks/tournamentMembers/__title/tournamentMembers__title.css);
 @import url(../blocks/tournamentMembers/__tournametMember/tournametMember.css);
+
 @import url(../blocks/tournamentMembers/__tournametMember/__name/tournametMember__name.css);
 @import url(../blocks/tournamentMembers/__tournametMember/__caption/tournametMember__caption.css);
 @import url(../blocks/tournamentMembers/__tournametMember/__photo/tournametMember__photo.css);

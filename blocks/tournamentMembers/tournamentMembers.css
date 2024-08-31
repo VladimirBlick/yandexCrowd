@@ -1,7 +1,16 @@
 .tournamentMembers {
     max-width: 1222px;
-    margin: 200px auto;
+    margin: 0 auto;
+    padding: 200px 0;
     display: flex;
     flex-flow: column;
     column-gap: 20px;
   }
+
+@media (max-width: 1280px) {
+  .tournamentMembers {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 115px;
+  }
+}
